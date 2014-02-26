@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core">
+<f:view locale="en">
+	<h:head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<ui:insert name="header">
+			<title></title>
+		</ui:insert>
+		<h:outputScript library="javax.faces" name="jsf.js" target="head"/>
+	</h:head>
+	
+	<h:body>
+
+        <h:form id="menuForm">
+
+        <p:menubar>
+            <p:submenu label="Users" >
+                <p:menuitem value="New" url="${pageContext.request.contextPath}/create.jsf" />
+                <p:menuitem value="List of users" url="${pageContext.request.contextPath}/list.jsf" />
+            </p:submenu>
+
+            <p:submenu label="File" icon="ui-icon-document">
+                <p:submenu label="New" icon="ui-icon-contact">
+                    <p:menuitem value="Project" url="#" />
+                    <p:menuitem value="Other" url="#" />
+                </p:submenu>
+                <p:menuitem value="Open" url="#" />
+                <p:separator />
+                <p:menuitem value="Quit" url="#" />
+            </p:submenu>
+            <p:menuitem value="Quit" url="http://www.primefaces.org" icon="ui-icon-close" />
+        </p:menubar>
+
+        </h:form>
+
+
+		<ui:insert name="body">
+		</ui:insert>
+		<ui:insert name="script">
+		</ui:insert>
+	</h:body>
+</f:view>
+</html>
