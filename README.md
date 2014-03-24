@@ -38,6 +38,7 @@ modify this line on : persistance.xml
 ```
 
 and add data source to configuration file :
+wildfly-8.0.0.Final\standalone\configuration\standalone.xml
 
 =============================================
 ```xml
