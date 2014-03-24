@@ -50,8 +50,5 @@ and add data source to configuration file :
             </datasources>
         </subsystem>
         
-        ```
-        
-        
+```
 
-============================================
