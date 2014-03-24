@@ -17,6 +17,7 @@ modify this line on : persistance.xml
 and add data source to configuration file :
 
 =============================================
+```xml
 
 <subsystem xmlns="urn:jboss:domain:datasources:2.0">
             <datasources>
@@ -48,5 +49,9 @@ and add data source to configuration file :
                 </drivers>
             </datasources>
         </subsystem>
+        
+        ```
+        
+        
 
 ============================================
