@@ -10,9 +10,9 @@ TO use this sample with wildfly-8
 
 modify this line on : persistance.xml
 
-===============================================
+```xml
  <jta-data-source>java:jboss/datasources/myJtaDatabase</jta-data-source>
-===========================================================
+```
 
 and add data source to configuration file :
 
